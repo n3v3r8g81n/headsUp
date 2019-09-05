@@ -1,7 +1,36 @@
 @import "bootstrap";
-@import "font-awesome";
+/* @import "font-awesome"; */
 
 body{
-  background: image_url('dynamic-style.png');
+  background: #FFFFFF;
   font-family: "Avenir Next", sans-serif;
   }
+
+.booyah-box{
+  -webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
+  -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
+  box-shadow:1px 1px 2px 0 #d0d0d0;
+  background:#fff;
+  border:1px solid #ccc;
+  border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+h1,h3 {
+    font-weight: bold;
+    margin: 10;
+    paddig: 10;
+}
+
+.navbar {
+  background: image_url('circuit');
+  box-shadow: 0px 3px 5px #ccc5b8;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #615c52;
+  font-family: 'rubikblack', sans-serif;
+  font-size: 32px;
+}
