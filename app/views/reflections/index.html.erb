@@ -1,6 +1,5 @@
 <h1 class="col-10 offset-1">My Daily Reflections</h1>
-<!-- <% @reflections = @reflections.order(:created_at).reverse_order %>
--->
+<% @reflections = @reflections.order(:created_at).reverse_order %>
 <% @reflections.each do |reflection| %>
  <div class="booyah-box col-10 offset-1">
     <h3><%= reflection.created_at.strftime("%B %d, %Y") %></h3>
@@ -8,6 +7,3 @@
 </div>
 <% end %>
 
-<div class="row justify-content-md-center">
-    <%= will_paginate @reflections %>
-</div>
