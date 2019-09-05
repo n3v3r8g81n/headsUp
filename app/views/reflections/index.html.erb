@@ -1,1 +1,8 @@
 <h1>My Daily Reflections</h1>
+<% @reflections = @reflections.order(:created_at).reverse_order %>
+<% @reflections.each do |reflection| %>
+ <div>
+    <h3><%= reflection.created_at.strftime("%B %d, %Y") %></h3>
+    <p><%= reflection.entry %></p>
+</div>
+<% end %>
